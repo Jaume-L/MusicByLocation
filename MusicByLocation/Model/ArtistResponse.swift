@@ -13,6 +13,6 @@ struct ArtistResponse: Codable {
     
     private enum CodingKeys: String, CodingKey {
         case count = "resultCount"
-        case results
+        case results = "results"
     }
 }
