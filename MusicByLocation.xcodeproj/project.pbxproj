@@ -15,6 +15,10 @@
 		81AB646129B0FAC500D11100 /* MusicByLocationUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81AB646029B0FAC500D11100 /* MusicByLocationUITests.swift */; };
 		81AB646329B0FAC500D11100 /* MusicByLocationUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81AB646229B0FAC500D11100 /* MusicByLocationUITestsLaunchTests.swift */; };
 		81AB647029B0FBE800D11100 /* LocationHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81AB646F29B0FBE800D11100 /* LocationHandler.swift */; };
+		81F5933D29B2765B00EEE266 /* CLPlacemark.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81F5933C29B2765B00EEE266 /* CLPlacemark.swift */; };
+		81F5933F29B27DCC00EEE266 /* StateController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81F5933E29B27DCC00EEE266 /* StateController.swift */; };
+		81F5934229B2A21A00EEE266 /* ArtistResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81F5934129B2A21A00EEE266 /* ArtistResponse.swift */; };
+		81F5934429B2A25B00EEE266 /* Artist.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81F5934329B2A25B00EEE266 /* Artist.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -46,6 +50,10 @@
 		81AB646029B0FAC500D11100 /* MusicByLocationUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MusicByLocationUITests.swift; sourceTree = "<group>"; };
 		81AB646229B0FAC500D11100 /* MusicByLocationUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MusicByLocationUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		81AB646F29B0FBE800D11100 /* LocationHandler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationHandler.swift; sourceTree = "<group>"; };
+		81F5933C29B2765B00EEE266 /* CLPlacemark.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CLPlacemark.swift; sourceTree = "<group>"; };
+		81F5933E29B27DCC00EEE266 /* StateController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StateController.swift; sourceTree = "<group>"; };
+		81F5934129B2A21A00EEE266 /* ArtistResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArtistResponse.swift; sourceTree = "<group>"; };
+		81F5934329B2A25B00EEE266 /* Artist.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Artist.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -96,11 +104,14 @@
 		81AB644429B0FAC100D11100 /* MusicByLocation */ = {
 			isa = PBXGroup;
 			children = (
+				81F5934029B2A20000EEE266 /* Model */,
+				81F5933B29B2763400EEE266 /* Extensions */,
 				81AB644529B0FAC100D11100 /* MusicByLocationApp.swift */,
 				81AB644729B0FAC100D11100 /* ContentView.swift */,
 				81AB644929B0FAC400D11100 /* Assets.xcassets */,
 				81AB644B29B0FAC400D11100 /* Preview Content */,
 				81AB646F29B0FBE800D11100 /* LocationHandler.swift */,
+				81F5933E29B27DCC00EEE266 /* StateController.swift */,
 			);
 			path = MusicByLocation;
 			sourceTree = "<group>";
@@ -128,6 +139,23 @@
 				81AB646229B0FAC500D11100 /* MusicByLocationUITestsLaunchTests.swift */,
 			);
 			path = MusicByLocationUITests;
+			sourceTree = "<group>";
+		};
+		81F5933B29B2763400EEE266 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				81F5933C29B2765B00EEE266 /* CLPlacemark.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		81F5934029B2A20000EEE266 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				81F5934129B2A21A00EEE266 /* ArtistResponse.swift */,
+				81F5934329B2A25B00EEE266 /* Artist.swift */,
+			);
+			path = Model;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -263,6 +291,10 @@
 				81AB647029B0FBE800D11100 /* LocationHandler.swift in Sources */,
 				81AB644829B0FAC100D11100 /* ContentView.swift in Sources */,
 				81AB644629B0FAC100D11100 /* MusicByLocationApp.swift in Sources */,
+				81F5933D29B2765B00EEE266 /* CLPlacemark.swift in Sources */,
+				81F5933F29B27DCC00EEE266 /* StateController.swift in Sources */,
+				81F5934229B2A21A00EEE266 /* ArtistResponse.swift in Sources */,
+				81F5934429B2A25B00EEE266 /* Artist.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
