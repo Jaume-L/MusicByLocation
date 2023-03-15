@@ -13,14 +13,14 @@ struct ContentView: View {
     var body: some View {
         VStack {
             List {
-                ForEach(state.artistNames) { artistName in
-                    Text(artistName)
+                ForEach(state.newNames) { artistData in
+                    Link("\(artistData[0]), \(artistData[1])", destination: URL(string: artistData[2])!)
                 }
             }
             Spacer()
             Button("Find Music", action: {
                 state.findMusic()
-            })
+            }).buttonStyle(.bordered)
         }.onAppear(perform: {
             state.requestAccessToLocationData()
         })
