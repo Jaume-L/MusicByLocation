@@ -13,8 +13,8 @@ struct ContentView: View {
     var body: some View {
         VStack {
             List {
-                ForEach(state.newNames) { artistData in
-                    Link("\(artistData[0]), \(artistData[1])", destination: URL(string: artistData[2])!)
+                ForEach(state.artistNames) { artistData in
+                    Link(artistData, destination: URL(string: state.artistLinks[artistData]!) ?? URL(string: "https://itunes.apple.com/search?term=\(artistData)&entity=musicArtist")!)
                 }
             }
             Spacer()
